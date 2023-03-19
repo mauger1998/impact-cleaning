@@ -1,0 +1,225 @@
+:root {
+    --black:#0F0F0F;
+    --green:#94D40B;
+    --heading-one:85px;
+    --heading-two:45px;
+    --tag:12px;
+    --text:16px;
+    --card-heading:25px;
+    --mobile-heading-one:55px;
+    --mobile-heading-two:30px;
+    --mobile-tag:8px;
+    --mobile-text:14px;
+    --mobile-card-heading:16px;
+}
+
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.black-button {
+    padding:0.5rem 1.5rem;
+    border-radius:10rem;
+    color:var(--green);
+    background: var(--black);
+    border:2px solid var(--black);
+    cursor:pointer;
+    font-weight:700;
+}
+.green-button {
+    padding:0.5rem 1.5rem;
+    border-radius:10rem;
+    color:var(--black);
+    background: var(--green);
+    border:2px solid var(--green);
+    cursor:pointer;
+    font-weight:700;
+}
+
+ul {
+    list-style:none;
+}
+
+a {
+    color:black;
+    text-decoration:none;
+}
+header,
+section,
+main,
+footer {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width:100%;
+    max-width:1440px;
+    padding:6rem 4rem;
+}
+body {
+    background: var(--black);
+}
+
+/* Dropdown */
+
+/******* Dropdown *****/
+/***********************/
+.dropdown {
+    position:relative !important;
+    display:none;
+    z-index:10000 !important;
+
+    
+}
+.dropdown-menu {
+    position:absolute;
+    right:0;
+    top:calc(100% + 0.5rem);
+    padding:1.5rem;
+    background-color:var(--green);
+    box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.288);
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    width:max-content;
+    opacity:0;
+    transform:translateY(-1rem);
+    transition:opacity 0.5s, transform 0.5s;
+    pointer-events:none;
+    gap:2rem;
+
+   
+}
+.dropdown-heading > a {
+    font-weight:500 !important;
+}
+.dropdown-links {
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.dropdown-links a {
+    font-weight:500 !important;
+}
+.div {
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.dropdown.active > .link + .dropdown-menu {
+    opacity:1;
+    transform:translateY(0);
+    pointer-events:all;
+    transition:opacity 0.5s, transform 0.5s;
+
+}
+.menu + .dropdown-menu {
+    padding-block:2rem;
+}
+.dropdown-heading > p {
+    font-weight:700 !important;
+}
+.dropdown > a {
+    font-weight:500 !important;
+}
+.menu {
+    width:50px !important;
+    display:none;
+}
+@media (max-width:1050px) {
+    .menu {
+        display:block;
+        cursor:pointer;
+    }
+    nav {
+        display:none;
+    }
+    .dropdown {
+        displaY:block;
+    }
+}
+@media (max-width:324px) {
+    .dropdown-menu {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Header */
+header {
+    background-color:var(--green);
+    position:fixed;
+}
+.header-wrapper {
+    padding:2rem 4rem;
+    width:100%;
+    max-width:1440px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-wrapper ul {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:2rem;
+}
+@media (max-width:700px) {
+    .header-wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    .header-wrapper {
+        padding-inline:1rem;
+    }
+}
+/* Main */
+
+main {
+    background-image: url(images/hero-impact.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+main .wrapper {
+    padding-bottom:12rem;
+    padding-top:13rem;
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+main .wrapper h1 {
+    font-size:var(--heading-one);
+}
+.heading-one-container > p {
+    letter-spacing:0.75rem;
+    font-weight:200;
+}
+main .wrapper > p {
+    font-weight:200;
+    font-size:var(--text);
+    max-width:50ch;
+    line-height: 1.75;;
+}
+.hero-button-container {
+    margin-top:1rem;
+    display:flex;
+    align-items: center;
+    gap:1rem ;
+}
+.hero-button-container button {
+    padding:1rem 2rem;
+}
+.hero-button-container a:nth-of-type(2) button {
+    background-color:transparent;
+    color:var(--black);
+    border:3px solid var(--black)
+}
