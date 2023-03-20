@@ -171,6 +171,7 @@ header {
     justify-content: flex-end;
     gap:2rem;
 }
+
 @media (max-width:700px) {
     .header-wrapper {
         padding-inline:2rem;
@@ -849,6 +850,9 @@ footer .wrapper {
     background-color:var(--green);
     transition:500ms;
 }
+footer a {
+    color:var(--green);
+}
 @media (max-width:1116px) {
     .footer-top,
     .footer-top ul {
@@ -887,4 +891,16 @@ footer .wrapper {
 .black-button,
 .green-button {
     transition:500ms;
+}
+main a:nth-child(2) .black-button:hover {
+    background-color:var(--black);
+    color:var(--green);
+}
+.section-one a:nth-child(2) .green-button:hover {
+    background-color:var(--green);
+    color:var(--black);
+}
+.section-three a:nth-child(2) .black-button:hover {
+    color:var(--green);
+    background-color:var(--black);
 }

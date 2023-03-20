@@ -154,7 +154,7 @@ body {
 
 /* Header */
 header {
-    background-color:#0f0f0f4d;
+    background-color:#0f0f0f8e;
     position:fixed;
 }
 .header-wrapper {
@@ -171,6 +171,14 @@ header {
     justify-content: flex-end;
     gap:2rem;
 
+}
+header button {
+    background-color:var(--green)!important;
+    color:var(--black) !important;
+}
+header button:hover {
+    background-color:transparent !important;
+    color:var(--green) !important;
 }
 .header-wrapper li {
     color:var(--green);
@@ -290,24 +298,31 @@ main .wrapper > p {
         width:100%;
     }
 }
-@media (max-width:380px) {
+@media (max-width:441px) {
     main .wrapper h1 {
         font-size:60px;
     }
 }
-@media (max-width:350px) {
-    main .wrapper h1 {
-        font-size:55px;
-    }
-}
-@media (max-width:320px) {
+@media (max-width:414px) {
     main .wrapper h1 {
         font-size:50px;
     }
 }
-@media (max-width:294px) {
+
+
+@media (max-width:350px) {
     main .wrapper h1 {
         font-size:45px;
+    }
+}
+@media (max-width:318px) {
+    main .wrapper h1 {
+        font-size:40px;
+    }
+}
+@media (max-width:294px) {
+    main .wrapper h1 {
+        font-size:35px;
     }
 }
 
@@ -430,6 +445,7 @@ main .wrapper > p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom:14rem;
 }
 .goodbye-section p {
     font-size:35px;
@@ -594,6 +610,37 @@ footer .wrapper {
 .black-button,
 .green-button {
     transition:500ms;
+}
+/* Hover */
+
+.black-button:hover {
+    background-color:transparent;
+    color:var(--black);
+    transition:500ms;
+}
+.green-button:hover {
+    background-color:transparent;
+    color:var(--green);
+    transition:500ms;
+}
+.black-button,
+.green-button {
+    transition:500ms;
+}
+main .black-button:hover {
+    color:var(--green);
+}
+main a:nth-child(2) .black-button:hover {
+    background-color:var(--green) ;
+    color:var(--black);
+}
+.section-one a:nth-child(2) .green-button:hover {
+    background-color:var(--green);
+    color:var(--black);
+}
+.section-three a:nth-child(2) .black-button:hover {
+    color:var(--green);
+    background-color:var(--black);
 }
 
 

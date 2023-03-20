@@ -154,7 +154,7 @@ body {
 
 /* Header */
 header {
-    background-color:#0f0f0f4d;
+    background-color:#0f0f0f8e;
     position:fixed;
 }
 .header-wrapper {
@@ -175,6 +175,14 @@ header {
 .header-wrapper li {
     color:var(--green);
 
+}
+header button {
+    background-color:var(--green)!important;
+    color:var(--black) !important;
+}
+header button:hover {
+    background-color:transparent !important;
+    color:var(--green) !important;
 }
 .header-wrapper .black-button {
     border:2px solid var(--green)
@@ -510,6 +518,7 @@ main .wrapper > p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-block:14rem;
 }
 .goodbye-section p {
     font-size:35px;
@@ -636,6 +645,9 @@ footer .wrapper {
     background-color:var(--green);
     transition:500ms;
 }
+footer a {
+    color:var(--green);
+}
 @media (max-width:1116px) {
     .footer-top,
     .footer-top ul {
@@ -674,4 +686,19 @@ footer .wrapper {
 .black-button,
 .green-button {
     transition:500ms;
+}
+main .black-button:hover {
+    color:var(--green);
+}
+main a:nth-child(2) .black-button:hover {
+    background-color:var(--green) ;
+    color:var(--black);
+}
+.section-one a:nth-child(2) .green-button:hover {
+    background-color:var(--green);
+    color:var(--black);
+}
+.section-three a:nth-child(2) .black-button:hover {
+    color:var(--green);
+    background-color:var(--black);
 }
