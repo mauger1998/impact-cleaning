@@ -6,7 +6,7 @@
     --tag:12px;
     --text:14px;
     --card-heading:25px;
-    --mobile-heading-one:55px;
+    --mobile-heading-one:65px;
     --mobile-heading-two:30px;
     --mobile-tag:8px;
     --mobile-text:12px;
@@ -184,9 +184,10 @@ header {
 /* Main */
 
 main {
-    background-image: url(images/hero-impact.png);
+    background-image: url(images/third-impact-hero.png);
     background-repeat: no-repeat;
     background-size:cover;
+    background-position:center;
 }
 
 main .wrapper {
@@ -222,6 +223,75 @@ main .wrapper > p {
     background-color:transparent;
     color:var(--black);
     border:3px solid var(--black)
+}
+@media (max-width:883px) {
+    main .wrapper h1 {
+        font-size:70px;
+    }
+    .hero-button-container button {
+        padding-inline:1rem;
+    }
+}
+@media (max-width:700px) {
+    main .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:634px) {
+    main .wrapper h1 {
+        font-size:65px;
+    }
+    main .wrapper {}
+   
+    .hero-button-container {
+        flex-direction: column;
+        width:100%;
+    }
+    .hero-button-container a {
+        width:100%;
+    }
+    .hero-button-container button {
+        width:25rem;
+    }
+}
+@media (max-width:500px) {
+    main .wrapper {
+        padding-inline:1rem;
+    }
+    main .wrapper h1 {
+        font-size:var(--mobile-heading-one);
+    }
+    main .wrapper > p {
+        font-size:var(--mobile-text)
+    }
+    .heading-one-container > p {
+        font-size:var(--mobile-tag);
+    }
+}
+@media (max-width:483px) {
+    .hero-button-container button {
+        width:100%;
+    }
+}
+@media (max-width:380px) {
+    main .wrapper h1 {
+        font-size:60px;
+    }
+}
+@media (max-width:350px) {
+    main .wrapper h1 {
+        font-size:55px;
+    }
+}
+@media (max-width:320px) {
+    main .wrapper h1 {
+        font-size:50px;
+    }
+}
+@media (max-width:294px) {
+    main .wrapper h1 {
+        font-size:45px;
+    }
 }
 
 /* Section One */
@@ -336,7 +406,7 @@ main .wrapper > p {
 }
 .section-two-top {
     display:flex;
-    align-items: center;
+    align-items: flex-end;
 }
 .section-two-top-left {
     width:40%;
@@ -346,7 +416,7 @@ main .wrapper > p {
 }
 .section-two-top-left h2 {
     font-size:var(--heading-two);
-    width:75%;
+    width:55%;
 }
 .section-two-top-right p {
     font-size:var(--text);
@@ -397,6 +467,9 @@ main .wrapper > p {
 @media (max-width:700px) {
     .section-two .wrapper {
         padding-inline:2rem;
+    }
+    .section-two-top-left h2 {
+        width:100%;
     }
 }
 @media (max-width:500px) {
@@ -520,7 +593,7 @@ main .wrapper > p {
 }
 .section-four-top {
     display:flex;
-    align-items: center;
+    align-items: flex-end;
 }
 .section-four-top-left {
     width:40%;
@@ -619,6 +692,7 @@ main .wrapper > p {
 
 .form-section .wrapper {
     padding-top:0;
+    
 }
 
 .contact-card {
@@ -634,10 +708,10 @@ main .wrapper > p {
     width:100%;
 }
 .form-section-left {
-    width:40%;
+    width:50%;
 }
 .form-section-right {
-    width:60%;
+    width:50%;
 }
 .form-section-right {
     margin-left:-4rem;
@@ -664,7 +738,7 @@ fieldset {
     border:none;
     display:flex;
     flex-direction: column;
-    width:100%;
+    width:80%;
     gap:0.5rem;
 }
 input,
@@ -683,6 +757,49 @@ textarea:focus {
 }
 form button {
     margin-top:1rem;
+}
+@media (max-width:1110px) {
+    
+    fieldset {
+        width:100%;
+    }
+    .contact-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-inline:4rem;
+    }
+    .form-section-left {
+        width:100%;
+    }
+    .form-section-right {
+        display:none;
+    }
+}
+@media (max-width:700px) {
+    .contact-card {
+        padding-inline:2rem;
+    }
+    .form-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    .contact-card {
+        padding-inline:1rem;
+    }
+    .form-section .wrapper {
+        padding-inline:1rem;
+    }
+    .form-section-titles h2 {
+        font-size:var(--mobile-heading-two);
+    }
+    .form-section-titles > p {
+        font-size:var(--mobile-tag);
+    }
+    textarea,
+    input {
+        width:100%;
+    }
 }
 
 
@@ -731,6 +848,28 @@ footer .wrapper {
     color:var(--black);
     background-color:var(--green);
     transition:500ms;
+}
+@media (max-width:1116px) {
+    .footer-top,
+    .footer-top ul {
+        flex-direction: column;
+        gap:4rem;
+    }
+    .footer-bottom {
+        align-items: center;
+        display:flex;
+        justify-content: center;
+    }
+}
+@media (max-width:700px) {
+    footer .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    footer .wrapper {
+        padding-inline:1rem;
+    }
 }
 
 /* Hover */
