@@ -256,6 +256,10 @@ main .wrapper > p {
     .hero-button-container button {
         padding-inline:1rem;
     }
+    main .wrapper {
+        padding-bottom:12rem;
+    }
+ 
 }
 @media (max-width:700px) {
     main .wrapper {
@@ -266,7 +270,7 @@ main .wrapper > p {
     main .wrapper h1 {
         font-size:65px;
     }
-    main .wrapper {}
+   
    
     .hero-button-container {
         flex-direction: column;

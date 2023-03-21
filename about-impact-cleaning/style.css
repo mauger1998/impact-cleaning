@@ -256,6 +256,15 @@ main .wrapper > p {
     .hero-button-container button {
         padding-inline:1rem;
     }
+    main .wrapper {
+        padding-bottom:12rem;
+    }
+    main {
+        background-repeat: no-repeat;
+        background-size:max(100%, 40rem);
+        background-position:top;
+        
+    }
 }
 @media (max-width:700px) {
     main .wrapper {
