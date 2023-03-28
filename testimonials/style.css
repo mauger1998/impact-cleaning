@@ -355,6 +355,7 @@ main .wrapper > p {
 .section-two-top-left h2 {
     font-size:var(--heading-two);
     width:75%;
+    
 }
 .section-two-top-right p {
     font-size:var(--text);
@@ -362,7 +363,7 @@ main .wrapper > p {
 }
 .section-two-bottom {
     display:grid;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
     width:100%;
     gap:2rem;
     padding-top:6rem;
@@ -381,7 +382,7 @@ main .wrapper > p {
 .section-two-card p:nth-of-type(1) {
     font-weight:700;
     font-size:var(--card-heading);
-    text-align:center;
+    text-align:left;
 }
 .section-two-card p:nth-of-type(2) {
     font-weight:300;
