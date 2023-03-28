@@ -156,6 +156,8 @@ body {
 header {
     background-color:#0f0f0f8e;
     position:fixed;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .header-wrapper {
     padding:2rem 4rem;

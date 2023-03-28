@@ -155,6 +155,8 @@ body {
 /* Header */
 header {
     background-color:#0F0F0F90;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     position:fixed;
 }
 .header-wrapper {
