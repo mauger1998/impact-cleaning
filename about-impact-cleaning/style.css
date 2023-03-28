@@ -771,7 +771,7 @@ main a:nth-child(2) .black-button:hover {
         width:100%;
     }
     .section-new-left img {
-        width:75%;
+        width:100%;
     }
     .section-new-left {
         display:flex;
