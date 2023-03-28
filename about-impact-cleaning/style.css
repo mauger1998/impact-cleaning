@@ -19,7 +19,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .black-button {
@@ -229,7 +229,7 @@ main .wrapper h1 {
 main .wrapper > p {
     font-weight:200;
     font-size:var(--text);
-    max-width:50ch;
+    max-width:45ch;
     line-height: 1.75;
     color:var(--green);
 }
@@ -240,7 +240,7 @@ main .wrapper > p {
     gap:1rem ;
 }
 .hero-button-container button {
-    padding:1rem 2rem;
+    padding:1rem 8rem;
     border:2px solid var(--green);
     background-color:var(--green);
     color:var(--black);
@@ -256,7 +256,10 @@ main .wrapper > p {
         font-size:70px;
     }
     .hero-button-container button {
-        padding-inline:1rem;
+        padding-inline:8rem;
+    }
+    main .wrapper p {
+        max-width:40ch;
     }
     main .wrapper {
         padding-bottom:12rem;
@@ -277,7 +280,6 @@ main .wrapper > p {
     main .wrapper h1 {
         font-size:65px;
     }
-    main .wrapper {}
    
     .hero-button-container {
         flex-direction: column;
@@ -307,6 +309,7 @@ main .wrapper > p {
 @media (max-width:483px) {
     .hero-button-container button {
         width:100%;
+        padding-inline:1rem;
     }
 }
 @media (max-width:380px) {

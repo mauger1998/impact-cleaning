@@ -19,7 +19,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .black-button {
@@ -240,7 +240,7 @@ main .wrapper > p {
     gap:1rem ;
 }
 .hero-button-container button {
-    padding:1rem 2rem;
+    padding:1rem 4rem;
     border:2px solid var(--green);
     background-color:var(--green);
     color:var(--black);
@@ -256,7 +256,7 @@ main .wrapper > p {
         font-size:70px;
     }
     .hero-button-container button {
-        padding-inline:1rem;
+        padding-inline:2rem;
     }
     main .wrapper {
         padding-bottom:12rem;
@@ -282,7 +282,7 @@ main .wrapper > p {
         width:100%;
     }
     .hero-button-container button {
-        width:25rem;
+        width:27rem;
     }
 }
 @media (max-width:500px) {
