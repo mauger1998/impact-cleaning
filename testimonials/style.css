@@ -390,6 +390,14 @@ main .wrapper > p {
 .section-two-card button {
     margin-top:1rem;
 }
+.section-two .button-wrapper {
+    /* border:2px solid red; */
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
 @media (max-width:1116px) {
     .section-two-top {
         flex-direction: column;

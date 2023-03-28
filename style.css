@@ -200,6 +200,7 @@ main .wrapper {
 }
 main .wrapper h1 {
     font-size:var(--heading-one);
+    line-height:1.1;
 }
 .heading-one-container > p {
     letter-spacing:0.75rem;
@@ -216,14 +217,18 @@ main .wrapper > p {
     display:flex;
     align-items: center;
     gap:1rem ;
+    
 }
 .hero-button-container button {
-    padding:1rem 2rem;
+    padding:1rem 10rem;
+    width:100%;
 }
 .hero-button-container a:nth-of-type(2) button {
     background-color:transparent;
     color:var(--black);
-    border:3px solid var(--black)
+    border:3px solid var(--black);
+    width:100%;
+
 }
 @media (max-width:883px) {
     main .wrapper h1 {
@@ -231,6 +236,8 @@ main .wrapper > p {
     }
     .hero-button-container button {
         padding-inline:1rem;
+        padding:1rem 10rem;
+
     }
     main {
         background-position:-25rem;
@@ -248,6 +255,9 @@ main .wrapper > p {
     main {
         background-position:-35rem;
     }
+    main .wrapper p {
+        max-width:45ch;
+    }
    
     .hero-button-container {
         flex-direction: column;
@@ -257,7 +267,8 @@ main .wrapper > p {
         width:100%;
     }
     .hero-button-container button {
-        width:25rem;
+        width:21rem;
+        padding-inline:0rem;
     }
 }
 @media (max-width:500px) {
@@ -609,7 +620,7 @@ main .wrapper > p {
 }
 .section-four-top-left h2 {
     font-size:var(--heading-two);
-    width:75%;
+    width:100%
 }
 .section-four-top-right p {
     font-size:var(--text);
@@ -617,7 +628,7 @@ main .wrapper > p {
 }
 .section-four-bottom {
     display:grid;
-    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(450px, 1fr) );
     width:100%;
     gap:2rem;
     padding-top:6rem;
@@ -643,6 +654,13 @@ main .wrapper > p {
 @media (max-width:700px) {
     .section-four .wrapper {
         padding-inline:2rem;
+        
+    }
+    .section-four-bottom {
+        padding-block:2rem;
+        grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+
+
     }
     .section-four-top-left h2 {
         width:100%;
@@ -650,6 +668,7 @@ main .wrapper > p {
     .section-four-top-left {
         width:100%;
     }
+    
 }
 @media (max-width:500px) {
     .section-four .wrapper {
@@ -663,6 +682,11 @@ main .wrapper > p {
     }
     .section-four-top-right p {
         font-size:var(--mobile-text);
+    }
+    .section-four-bottom {
+        padding-block:2rem;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+
     }
 }
 
@@ -683,6 +707,7 @@ main .wrapper > p {
 @media (max-width:700px) {
     .section-five .wrapper {
         padding-inline:2rem;
+        padding-top:0;
     }
     .section-five .wrapper h2 {
         font-size:35px;
