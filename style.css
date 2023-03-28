@@ -201,6 +201,10 @@ main .wrapper button {
    margin-top:1rem;
    width:25rem;
    padding-block:0.75rem;
+   transition: none;
+}
+main .wrapper button:hover {
+    transition:none;
 }
 .titles {
     display:flex;
@@ -224,6 +228,9 @@ main .wrapper p {
 .hero-img img {
     width:100%;
 }
+br {
+    display:none;
+}
 .hero-img {
     margin-top:-6rem;
 }
@@ -237,32 +244,43 @@ main .wrapper p {
         font-size:65px;
     }
 }
-@media (max-width:782px) {
+@media (max-width:814px) {
+    br {
+        display:block;
+    }
+    main .wrapper {
+        align-items:flex-start;
+    }
     main .wrapper h1 {
-        font-size:55px;
+        text-align:left;
+        font-size:65px;
+    }
+    .titles > p {
+        letter-spacing:1rem;
+    }
+    .titles {
+        align-items: flex-start;
+    }
+    main .wrapper p {
+        text-align:left;
+        max-width:45ch;
     }
 }
+
 @media (max-width:700px) {
     main .wrapper {
         padding-inline:2rem;
     }
 }
-@media (max-width:608px) {
-    main .wrapper h1 {
-        font-size:50px;
-    }
-}
-@media (max-width:562px) {
-    main .wrapper h1 {
-        font-size:45px;
-    }
-}
+
 @media (max-width:510px) {
-    main .wrapper h1 {
-        font-size:40px;
-    }
+   
     main .wrapper button {
         width:100%;
+        transition:none;
+    }
+    main .wrapper button:hover {
+        transition: none;
     }
     main .wrapper a {
         width:100%;
@@ -282,12 +300,34 @@ main .wrapper p {
         font-size:var(--mobile-text);
     }
 }
+@media (max-width:442px) {
+    .hero-img {
+        margin-top:-2rem;
+    }
+    
+}
 @media (max-width:425px) {
     .titles > p {
         letter-spacing:1rem;
     }
     main .wrapper p {
-        max-width:30ch;
+        max-width:50ch;
+    }
+}
+@Media (max-width:392px) {
+    main .wrapper h1 {
+        font-size:50px;
+    }
+    main .wrapper p {
+        max-width:40ch;
+    }
+}
+@Media (max-width:320px) {
+    main .wrapper h1 {
+        font-size:45px;
+    }
+    main .wrapper p {
+        max-width:40ch;
     }
 }
 /** Social Banner **/
