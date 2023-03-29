@@ -692,6 +692,10 @@ footer a {
     color:var(--black);
     transition:500ms;
 }
+.section-new a:nth-child(2) button:hover {
+    background-color:var(--green);
+    color:var(--black);
+}
 .green-button:hover {
     background-color:transparent;
     color:var(--green);
