@@ -832,3 +832,67 @@ main a:nth-child(2) .black-button:hover {
         width:100%;
     }
 }
+/** Team **/
+
+.meet-the-team-section .wrapper {
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:4rem;
+}
+.team-titles {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+}
+.team-titles-left h2 {
+    font-size:var(--heading-two);
+    color:var(--green);
+}
+.team-titles-left p {
+    font-size:var(--tag);
+    color:var(--green);
+}
+.team-titles-left {
+    width:40%;
+}
+.team-titles-left + p {
+    width:60%;
+    font-weight:300;
+    line-height:1.75;
+    color:var(--green);
+}
+@media (max-width:1015px) {
+    .team-titles {
+        flex-direction: column;
+        align-items: flex-start;
+        gap:2rem;
+    }
+    .team-titles-left,
+    .team-titles-left + p {
+        width:100%;
+    }
+}
+@Media (max-width:700px) {
+    .meet-the-team-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:606px) {
+    .team-titles h2 {
+        font-size:var(--mobile-heading-two);
+    }
+    .team-titles-left p {
+        font-size:var(--mobile-tag);
+    }
+    .team-titles-left + p {
+        font-size:var(--mobile-text);
+    }
+}
+@Media (max-width:500px) {
+    .meet-the-team-section .wrapper {
+        padding-inline:1rem;
+    }
+}
