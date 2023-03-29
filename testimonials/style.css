@@ -210,7 +210,7 @@ main {
 }
 
 main .wrapper {
-    padding-bottom:19rem;
+    padding-bottom:13rem;
     padding-top:13rem;
     display:flex;
     flex-direction: column;
@@ -331,6 +331,7 @@ main .wrapper > p {
         font-size:35px;
     }
 }
+
 
 /* Section Two */
 

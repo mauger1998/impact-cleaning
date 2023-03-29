@@ -210,7 +210,7 @@ main {
 }
 
 main .wrapper {
-    padding-bottom:19rem;
+    padding-bottom:13rem;
     padding-top:13rem;
     display:flex;
     flex-direction: column;
@@ -332,7 +332,19 @@ main .wrapper > p {
         font-size:45px;
     }
 }
+/** Social Banner **/
+.social-banner {
+    padding-block:0.5rem;
+    background-color:var(--green);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
 
+.social-banner img {
+    width:40px;
+}
 /* Section Three */
 
 .section-three {
@@ -728,7 +740,6 @@ main a:nth-child(2) .black-button:hover {
     display: flex;
     color:white;
     gap:4rem;
-    padding-top:0;
 }
 .section-new-right-titles h2 {
     font-size:var(--heading-two);
