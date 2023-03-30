@@ -940,6 +940,9 @@ footer a {
     align-items: center;
     justify-content: space-between;
 }
+.footer-bottom img {
+    width:125px;
+}
 .footer-bottom a {
     display:flex;
     flex-direction: column;
@@ -958,6 +961,9 @@ footer a {
         justify-content: center;
         flex-direction: column-reverse;
         gap:4rem;  
+    }
+    .footer-bottom a {
+        align-items: center;
     }
 }
 @media (max-width:700px) {
