@@ -1108,3 +1108,11 @@ main a:nth-child(2) .black-button:hover {
 .service-list-item img {
     width:40px;
 }
+.form-section-titles {
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.form-section-titles a {
+    margin-top:1rem !important;
+}
