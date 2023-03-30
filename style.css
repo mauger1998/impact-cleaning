@@ -1104,3 +1104,7 @@ main a:nth-child(2) .black-button:hover {
         width:100%;
     }
 }
+
+.service-list-item img {
+    width:40px;
+}
