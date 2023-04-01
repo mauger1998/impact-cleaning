@@ -191,147 +191,141 @@ header {
 }
 /* Main */
 
+main {
+    background-image:url(images/water-hero.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
 main .wrapper {
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
-    gap:1rem;
-    padding-top:12rem;
+    justify-content: center;
+    color:white;
+    gap:2rem;
+    padding-block:12rem;
+    padding-top:14rem;
 }
-main .wrapper button {
-   margin-top:1rem;
-   width:25rem;
-   padding-block:0.75rem;
-   transition: none;
-}
-main .wrapper button:hover {
-    transition:none;
-}
-.titles {
+main .wrapper .titles {
+    color:white;
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap:1rem;
 }
-.titles > p {
-    letter-spacing:2rem;
-    font-size:var(--tag);
+.titles p {
+    font-size:30px;
 }
-main .wrapper h1 {
-    color:var(--green);
-    font-size:var(--heading-one);
-    text-align:center;
-}
-main .wrapper p {
-    color:white;
-    text-align:center;
+main .wrapper > p {
     line-height:1.75;
+    text-align:center;
 }
-.hero-img img {
-    width:100%;
+main .wrapper img {
+    width:675px;
 }
-br {
-    display:none;
-}
-.hero-img {
-    margin-top:-6rem;
-}
-@media (max-width:996px) {
-    main .wrapper h1 {
-        font-size:75px;
+@media (max-width:1116px) {
+    main .wrapper img {
+        width:600px;
+    }
+    main .wrapper > p {
+        max-width:60ch;
     }
 }
-@media (max-width:874px) {
-    main .wrapper h1 {
-        font-size:65px;
+@media (max-width:760px) {
+    main .wrapper img {
+        width:550px;
+    }
+    main .wrapper > p {
+        max-width:50ch;
     }
 }
-@media (max-width:814px) {
-    br {
-        display:block;
-    }
-    main .wrapper {
-        align-items:flex-start;
-    }
-    main .wrapper h1 {
-        text-align:left;
-        font-size:65px;
-    }
-    .titles > p {
-        letter-spacing:1rem;
-    }
-    .titles {
-        align-items: flex-start;
-    }
-    main .wrapper p {
-        text-align:left;
-        max-width:45ch;
-    }
-}
-
-@media (max-width:700px) {
+@Media (max-width:700px) {
     main .wrapper {
         padding-inline:2rem;
     }
 }
-
-@media (max-width:510px) {
-   
-    main .wrapper button {
-        width:100%;
-        transition:none;
+ @media (max-width:640px) {
+    main {
+        background-position:-32.5rem;
     }
-    main .wrapper button:hover {
-        transition: none;
-    }
-    main .wrapper a {
-        width:100%;
-    }
-}
-@media (max-width:500px) {
-    main .wrapper {
-        padding-inline:1rem;
-    }
-    main h1 {
-        font-size:var(--mobile-heading-one);
-    }
-    .titles > p {
-        font-size:var(--mobile-tag);
+    main .wrapper img {
+        width:500px;
     }
     main .wrapper > p {
-        font-size:var(--mobile-text);
-    }
-}
-@media (max-width:442px) {
-    .hero-img {
-        margin-top:-2rem;
-    }
-    
-}
-@media (max-width:425px) {
-    .titles > p {
-        letter-spacing:1rem;
-    }
-    main .wrapper p {
         max-width:50ch;
     }
 }
-@Media (max-width:392px) {
-    main .wrapper h1 {
-        font-size:50px;
+@media (max-width:592px) {
+    main {
+        background-position:-32.5rem;
     }
-    main .wrapper p {
+    main .wrapper img {
+        width:425px;
+    }
+    main .wrapper > p {
         max-width:40ch;
     }
-}
-@Media (max-width:320px) {
-    main .wrapper h1 {
-        font-size:45px;
+} 
+@Media (max-width:500px) {
+    main .wrapper {
+        padding-inline:1rem;
     }
-    main .wrapper p {
+    main .wrapper > p {
+        font-size:var(--mobile-text)
+    }
+}
+@media (max-width:484px) {
+    main {
+        background-position:-37.5rem;
+    }
+    main .wrapper img {
+        width:375px;
+    }
+    main .wrapper > p {
         max-width:40ch;
     }
-}
+} 
+@media (max-width:424px) {
+    main {
+        background-position:-40.5rem;
+    }
+    main .wrapper img {
+        width:325px;
+    }
+    main .wrapper > p {
+        max-width:100%;
+    }
+    .titles > p {
+        font-size:20px;
+    }
+} 
+@media (max-width:384px) {
+    main {
+        background-position:-40.5rem;
+    }
+    main .wrapper img {
+        width:275px;
+    }
+    
+    main .wrapper > p {
+        max-width:100%;
+    }
+} 
+@media (max-width:320px) {
+    main {
+        background-position:-40.5rem;
+    }
+    main .wrapper img {
+        width:225px;
+    }
+    
+    main .wrapper > p {
+        max-width:100%;
+    }
+} 
 /** Social Banner **/
 .social-banner {
     padding-block:0.5rem;
