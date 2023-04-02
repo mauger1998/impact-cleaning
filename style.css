@@ -219,9 +219,11 @@ main .wrapper .titles {
 .titles p {
     font-size:30px;
 }
-main .wrapper > p {
+main .wrapper > h1 {
     line-height:1.75;
     text-align:center;
+    font-size:var(--text);
+    font-weight:200;
 }
 main .wrapper img {
     width:675px;
@@ -230,7 +232,7 @@ main .wrapper img {
     main .wrapper img {
         width:600px;
     }
-    main .wrapper > p {
+    main .wrapper >  h1 {
         max-width:60ch;
     }
 }
@@ -238,7 +240,7 @@ main .wrapper img {
     main .wrapper img {
         width:550px;
     }
-    main .wrapper > p {
+    main .wrapper > h1 {
         max-width:50ch;
     }
 }
@@ -254,7 +256,7 @@ main .wrapper img {
     main .wrapper img {
         width:500px;
     }
-    main .wrapper > p {
+    main .wrapper > h1 {
         max-width:50ch;
     }
 }
@@ -265,7 +267,7 @@ main .wrapper img {
     main .wrapper img {
         width:425px;
     }
-    main .wrapper > p {
+    main .wrapper > h1 {
         max-width:40ch;
     }
 } 
@@ -273,7 +275,7 @@ main .wrapper img {
     main .wrapper {
         padding-inline:1rem;
     }
-    main .wrapper > p {
+    main .wrapper > h1 {
         font-size:var(--mobile-text);
     }
 }
@@ -284,7 +286,7 @@ main .wrapper img {
     main .wrapper img {
         width:375px;
     }
-    main .wrapper > p {
+    main .wrapper > h1 {
         max-width:40ch;
     }
 } 
@@ -295,10 +297,10 @@ main .wrapper img {
     main .wrapper img {
         width:325px;
     }
-    main .wrapper > p {
+    main .wrapper > h1 {
         max-width:100%;
     }
-    .titles > p {
+    .titles > h1 {
         font-size:20px;
     }
 } 
@@ -310,7 +312,7 @@ main .wrapper img {
         width:275px;
     }
     
-    main .wrapper > p {
+    main .wrapper > h1 {
         max-width:100%;
     }
 } 
@@ -322,7 +324,7 @@ main .wrapper img {
         width:225px;
     }
     
-    main .wrapper > p {
+    main .wrapper > h1 {
         max-width:100%;
     }
 } 
