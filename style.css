@@ -205,8 +205,8 @@ main .wrapper {
     justify-content: center;
     color:white;
     gap:2rem;
-    padding-block:12rem;
-    padding-top:14rem;
+    padding-block:8rem;
+    padding-top:12rem;
 }
 main .wrapper .titles {
     color:white;
@@ -274,7 +274,7 @@ main .wrapper img {
         padding-inline:1rem;
     }
     main .wrapper > p {
-        font-size:var(--mobile-text)
+        font-size:var(--mobile-text);
     }
 }
 @media (max-width:484px) {
